@@ -1,0 +1,92 @@
+export default () => (
+  <>
+    <button class="btn-70">Button</button>
+
+    <style jsx>{`
+      .btn-70 {
+        all: unset;
+        text-align: center;
+        curosr: default;
+        font-family: sans-serif;
+        font-weight: 900;
+        box-sizing: border-box;
+        padding: 25px 50px;
+        width: auto !important;
+        height: auto !important;
+      }
+      .btn-70 {
+  display: block;
+  width: 100%;
+  height: 80px;
+  margin: 1rem auto;
+  max-width: 250px;
+
+  position: relative;
+
+  font-weight: 900;
+  text-transform: uppercase;
+  box-shadow: 0px 0px 0px 2px white inset;
+
+  transition: color 0.1s linear;
+}
+
+.btn-70:hover {
+  color: black;
+  transition: color 0.1s linear 0.1s;
+}
+
+.btn-70:before,
+.btn-70:after {
+  z-index: -1;
+  content: "";
+
+  position: absolute;
+}
+.btn-70:before {
+  border-top: var(--border);
+  border-bottom: var(--border);
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 100%;
+}
+.btn-70:hover:before {
+  --border: 4px solid black;
+  animation: border-top-and-bottom 1s forwards;
+}
+.btn-70:after {
+  border-left: var(--border);
+  border-right: var(--border);
+  bottom: 50%;
+  transform: translateY(50%);
+  right: 0;
+  width: 100%;
+}
+.btn-70:hover:after {
+  --border: 4px solid black;
+  animation: border-right-and-left 1s forwards;
+}
+@keyframes border-top-and-bottom {
+  0% {
+    z-index: 1;
+    width: 0;
+  }
+  100% {
+    z-index: 1;
+    width: 100%;
+  }
+}
+@keyframes border-right-and-left {
+  0% {
+    z-index: 1;
+    height: 0;
+  }
+  100% {
+    z-index: 1;
+    height: 100%;
+  }
+}
+
+    `}</style>
+  </>
+)
