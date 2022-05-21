@@ -1,17 +1,31 @@
 const app = require('express')();
-const { v4 } = require('uuid');
+const cors = require('cors');
 
-app.get('/api', (req, res) => {
-  const path = `/api/item/${v4()}`;
-  res.setHeader('Content-Type', 'text/html');
-  res.setHeader('Cache-Control', 's-max-age=1, stale-while-revalidate');
-  res.end(`Hello! Go to item: <a href="${path}">${path}</a>`);
-});
+const axios = require('axios');
+const asyncHandler = require('express-async-handler')
 
-app.get('/api/item/:slug', (req, res) => {
-  const { slug } = req.params;
-  res.end(`Item: ${slug}`);
-});
+const client_id = 'ee303ba8e3dd54743288'
+const client_secret = process.env.client_secret
+
+app.use(cors({
+  origin: ['http://127.0.0.1:3000', 'https://css-buttons.web.app']
+}))
+
+app.post('/api/auth/', asyncHandler(async (req, res) => {
+  const code = req.query.code
+
+  const url = `https://github.com/login/oauth/access_token/?client_id=${client_id}&client_secret=${client_secret}&code=${code}`
+
+  const { access_token } = (await axios({
+    method: 'post',
+    url,
+    headers: {
+      'Accept': 'application/json'
+    }
+  })).data
+
+  res.send(access_token)
+}))
 
 module.exports = app;
 
