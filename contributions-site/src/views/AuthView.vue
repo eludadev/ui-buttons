@@ -23,7 +23,6 @@
 					url: `https://css-buttons-api.vercel.app/api/auth/?code=${code}`,
 					responseType: 'text'
 				})
-				console.log(response)
 				const access_token = response.data
 				localStorage.setItem('access_token', access_token)
 				this.is_authenticated = true
