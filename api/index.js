@@ -16,13 +16,17 @@ app.post('/api/auth/', asyncHandler(async (req, res) => {
 
   const url = `https://github.com/login/oauth/access_token/?client_id=${client_id}&client_secret=${client_secret}&code=${code}`
 
-  const { access_token } = (await axios({
+  const response = await axios({
     method: 'post',
     url,
     headers: {
       'Accept': 'application/json'
     }
-  })).data
+  })
+
+  console.log(response)
+
+  const { access_token } = response.data
 
   res.send(access_token)
 }))
