@@ -17,7 +17,10 @@ export default defineStore('buttons', {
 					const response = await axios({
 						method: 'get',
 						url,
-						responseType: 'text'
+						responseType: 'text',
+						headers: {
+							'Cache-Control': 'no-cache'
+						}
 					})
 					button.source_files[ext] = response.data
 					button.modified_files[ext] = response.data
