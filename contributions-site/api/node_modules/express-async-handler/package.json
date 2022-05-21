@@ -1,0 +1,30 @@
+{
+  "name": "express-async-handler",
+  "version": "1.2.0",
+  "description": "Express Error Handler for Async Functions",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Abazhenov/express-async-handler.git"
+  },
+  "scripts": {
+    "test": "mocha test.js"
+  },
+  "keywords": [
+    "express",
+    "async",
+    "error middleware",
+    "await",
+    "error",
+    "handling"
+  ],
+  "author": "Alex Bazhenov",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/express": "*",
+    "chai": "^4.3.4",
+    "mocha": "^9.1.3",
+    "sinon": "^11.1.2",
+    "sinon-chai": "^3.7.0"
+  }
+}

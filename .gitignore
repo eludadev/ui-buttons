@@ -1,5 +1,4 @@
-api/node_modules
-api/yarn.lock
 contributions-site/node_modules
 contributions-site/yarn.lock
-
+contributions-site/api/node_modules
+contributions-site/api/yarn.lock
