@@ -28,7 +28,7 @@
 				this.is_authenticated = true
 			}
 			else {
-				this.auth_url = `https://github.com/login/oauth/authorize/?client_id=ee303ba8e3dd54743288&scope=public_repo&redirect_uri=http://127.0.0.1:3000/changes/auth`
+				this.auth_url = `https://github.com/login/oauth/authorize/?client_id=ee303ba8e3dd54743288&scope=public_repo&redirect_uri=https://contribute-to-css-buttons.vercel.app/changes/auth`
 			}
 		}
 	}

@@ -8,7 +8,7 @@ const client_id = 'ee303ba8e3dd54743288'
 const client_secret = process.env.client_secret
 
 app.use(cors({
-  origin: ['http://127.0.0.1:3000', 'https://css-buttons.web.app']
+  origin: ['https://contribute-to-css-buttons.vercel.app/']
 }))
 
 app.post('/api/auth/', asyncHandler(async (req, res) => {
