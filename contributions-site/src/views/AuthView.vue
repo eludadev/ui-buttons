@@ -20,7 +20,7 @@
 				const code = this.$route.query.code
 				const response = await axios({
 					method: 'post',
-					url: `https://css-buttons-iota.vercel.app/api/auth/?code=${code}`,
+					url: `https://css-buttons-api.vercel.app/api/auth/?code=${code}`,
 					responseType: 'text'
 				})
 				const access_token = response.data
