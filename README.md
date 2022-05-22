@@ -1,12 +1,8 @@
 ![Array of 20 button previews.](./assets/banner.webp)
 
-## :muscle: Contributions
+## :muscle: How to Contribute
 
-Currently, there are **100 buttons** in this project, but we’d **love to have more**!
-
-- If you have new button ideas, create an Issue.
-
-- If you have ideas on how to fix existing buttons, please create an Issue.
+If you know how to **fix** one of the buttons, please go to the official [contributions platform](https://contribute-to-css-buttons.vercel.app/) where you can **edit** code, and automatically create a **pull request**.
 
 **We thank you for your time!** :hugs:
 
