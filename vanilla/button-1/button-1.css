@@ -1,8 +1,7 @@
 .btn-1 {
   display: block;
-
+  box-sizing: border-box;
   padding: 20px 45px;
-  
   border-radius: 999px;
 
   position: relative;

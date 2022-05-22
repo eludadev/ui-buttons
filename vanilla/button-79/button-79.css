@@ -1,10 +1,10 @@
 .btn-79 {
   --height: 80px;
+  height: var(--height);
 
   display: block;
-  height: var(--height);
-  padding: 0 2rem;
-  max-width: 250px;
+  box-sizing: border-box;
+  padding: 20px 60px;
   border-radius: 999px;
 
   position: relative;

@@ -2,7 +2,8 @@
   --thickness: 4px;
 
   display: block;
-  margin: 1rem auto;
+  box-sizing: border-box;
+  padding: 2px 0px;
 
   position: relative;
 

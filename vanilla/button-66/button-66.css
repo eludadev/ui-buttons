@@ -1,12 +1,10 @@
 .btn-66 {
   --height: 40px;
+  line-height: var(--height);
 
   display: block;
-  width: 100%;
-  font-size: 2rem;
-  line-height: var(--height);
-  margin: 1rem auto;
-  max-width: 250px;
+  box-sizing: border-box;
+  padding: 0px 60px;
   border-radius: 999px;
 
   position: relative;
