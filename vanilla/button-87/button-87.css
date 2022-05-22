@@ -1,9 +1,9 @@
 .btn-87 {
   display: block;
+  box-sizing: border-box;
   height: 110px;
-  aspect-ratio: 1;
+  width: 110px;
 
-  margin: 1rem auto;
   border-radius: 999px;
 
   position: relative;

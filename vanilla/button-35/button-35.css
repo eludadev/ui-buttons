@@ -1,11 +1,10 @@
 .btn-35 {
-  --height: 50px;
+  --height: 60px;
+  height: var(--height);
 
   display: block;
-  width: 100%;
-  height: var(--height);
-  margin: 1rem auto;
-  max-width: 250px;
+  box-sizing: border-box;
+  padding: 0px 45px;
 
   position: relative;
   overflow: hidden;
