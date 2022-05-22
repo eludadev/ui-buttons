@@ -1,11 +1,11 @@
 .btn-94 {
   --size: 80px;
+  width: var(--size);
+  height: var(--size);
 
   display: block;
-  width: var(--size);
-  aspect-ratio: 1;
-
-  margin: 1rem auto;
+  box-sizing: border-box;
+  padding: 0px 0px;
 
   border-radius: 50%;
 

@@ -2,8 +2,8 @@
   --size: 60px;
 
   display: block;
-  height: 80px;
-  margin: 1rem auto;
+  box-sizing: border-box;
+  padding: 20px 0px;
   border-radius: 999px;
 
   position: relative;
@@ -26,6 +26,7 @@
 
 .btn-90 .blobs:before,
 .btn-90 .blobs:after {
+  pointer-events: none;
   content: "";
   width: var(--size);
   height: var(--size);

@@ -1,6 +1,8 @@
 .btn-99 {
   --margin: 20%;
 
+  display: inline;
+
   position: relative;
 
   font-weight: 900;
