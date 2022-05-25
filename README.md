@@ -1,11 +1,5 @@
 ![Array of 20 button previews.](./assets/banner.webp)
 
-## :muscle: How to Contribute
-
-If you know how to **fix** one of the buttons, please go to the official [contributions platform](https://contribute-to-css-buttons.vercel.app/) where you can **edit** code, and automatically create a **pull request**.
-
-**We thank you for your time!** :hugs:
-
 ## :robot: To See Code, Click on One of The Links
 
 | Preview | Link | Description |
