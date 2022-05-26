@@ -1,0 +1,82 @@
+.btn-101 {
+	--thickness: .3rem;
+	--roundness: 1.2rem;
+	--color: #eff6ff;
+	--opacity: 0.6;
+
+	display: block;
+
+	font-family: 'Poppins', 'sans-serif';
+	font-weight: 500;
+
+	font-size: 2rem;
+	padding: .8rem 3rem;
+
+	background: none;
+	border: none;
+
+	position: relative;
+	color: var(--color);
+
+	cursor: pointer;
+
+	background: rgba(255,255,255,0.2);
+	backdrop-filter: blur(100px);
+
+	border-radius: var(--roundness);
+}
+
+.btn-101:hover {
+	filter: brightness(1.2);
+	background: rgba(255,255,255,0.3);
+}
+
+.btn-101:active {
+	background: rgba(255,255,255,0.1);
+	--opacity: 0;
+}
+
+.btn-101 svg {
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+
+	border-radius: var(--roundness);
+	filter: url(#glow);
+}
+
+.btn-101 rect {
+	width: 100%;
+	height: 100%;
+
+	fill: none;
+	stroke: var(--color);
+	stroke-width: var(--thickness);
+
+	opacity: 0;
+
+	rx: var(--roundness);
+	stroke-linejoin: round;
+
+	stroke-dasharray: 185%;
+	stroke-dashoffset: 80;
+	animation: snake 2s linear infinite;
+
+	animation-play-state: paused;
+	transition: opacity 0.2s;
+}
+
+.btn-101:hover rect {
+	opacity: var(--opacity);
+	animation-play-state: running;
+}
+
+@keyframes snake {
+	to {
+		stroke-dashoffset: 370%;
+	}
+}
+

@@ -104,6 +104,7 @@
 | [ ![CSS Button that slides its pseudo-element underline on hover or click.](./assets/button-previews/button-98.webp)](https://css-buttons.web.app/button/?id=98) | [Line Slide](https://css-buttons.web.app/button/?id=98) | CSS Button that slides its pseudo-element underline on hover or click. |
 | [ ![CSS Button that crosses over itself and expands on hover or click.](./assets/button-previews/button-99.webp)](https://css-buttons.web.app/button/?id=99) | [Don't Cross The Line](https://css-buttons.web.app/button/?id=99) | CSS Button that crosses over itself and expands on hover or click. |
 | [ ![CSS Button that has a pseudo-element background going over it and out on hover or click.](./assets/button-previews/button-100.webp)](https://css-buttons.web.app/button/?id=100) | [Cover Over](https://css-buttons.web.app/button/?id=100) | CSS Button that has a pseudo-element background going over it and out on hover or click. |
+| [ ![CSS Button that has a moving and glowing border on hover or click.](./assets/button-previews/button-101.webp)](https://css-buttons.web.app/button/?id=101) | [Glowing Border](https://css-buttons.web.app/button/?id=101) | CSS Button that has a moving and glowing border on hover or click. |
 
 ## :triangular_flag_on_post: License
 
