@@ -1,4 +1,4 @@
-![Array of 20 button previews.](./assets/banner.webp)
+[![](./assets/banner.png)](https://css-buttons.web.app)
 
 ## :robot: To See Code, Click on One of The Links
 
