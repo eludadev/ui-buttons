@@ -1,0 +1,30 @@
+.btn-94 {
+  --size: 80px;
+  width: var(--size);
+  height: var(--size);
+
+  display: block;
+  box-sizing: border-box;
+  padding: 0px 0px;
+
+  border-radius: 50%;
+
+  position: relative;
+
+  background: rgba(255, 255, 255, 0.2);
+  background-clip: content-box;
+
+  border: 0px solid transparent;
+  outline: 5px solid currentColor;
+
+  transition: 0.2s;
+}
+
+.btn-94 svg {
+  fill: white;
+  padding: 15px;
+}
+
+.btn-94:hover {
+  border: 10px solid transparent;
+}

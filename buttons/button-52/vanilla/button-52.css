@@ -1,0 +1,57 @@
+.btn-52 {
+  display: block;
+  box-sizing: border-box;
+  padding: 20px 60px;
+  border-radius: 999px;
+
+  position: relative;
+  overflow: hidden;
+
+  font-weight: 900;
+  text-transform: uppercase;
+  border: 1px solid currentColor;
+}
+
+.btn-52 .original {
+  position: absolute;
+  inset: 0;
+
+  display: grid;
+  place-content: center;
+
+  background: #fff;
+  color: #000;
+
+  transition: transform 0.2s;
+}
+
+.btn-52:hover .original {
+  transform: translateY(100%);
+}
+.btn-52 .letters {
+  display: inline-flex;
+}
+.btn-52 span {
+  opacity: 0;
+  transform: translateY(-15px);
+  transition: transform 0.2s, opacity 0.2s;
+}
+.btn-52:hover span {
+  opacity: 1;
+  transform: translateY(0px);
+}
+.btn-52:hover span:nth-child(2) {
+  transition-delay: 0.1s;
+}
+.btn-52:hover span:nth-child(3) {
+  transition-delay: 0.2s;
+}
+.btn-52:hover span:nth-child(4) {
+  transition-delay: 0.3s;
+}
+.btn-52:hover span:nth-child(5) {
+  transition-delay: 0.4s;
+}
+.btn-52:hover span:nth-child(6) {
+  transition-delay: 0.5s;
+}

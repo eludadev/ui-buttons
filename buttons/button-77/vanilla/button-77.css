@@ -1,0 +1,22 @@
+.btn-77 {
+  display: block;
+  box-sizing: border-box;
+  padding: 20px 60px;
+  border-radius: 999px;
+
+  position: relative;
+  overflow: hidden;
+
+  font-weight: 900;
+  text-transform: uppercase;
+  border: 1px solid currentColor;
+
+  box-shadow: 0 0 0 2em transparent;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 white;
+  }
+}

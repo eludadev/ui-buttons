@@ -1,0 +1,43 @@
+.btn-6 {
+  display: block;
+  box-sizing: border-box;
+  padding: 20px 45px;
+  border-radius: 999px;
+
+  position: relative;
+  overflow: hidden;
+
+  text-transform: uppercase;
+  border: 1px solid currentColor;
+}
+
+.btn-6 span {
+  font-weight: 900;
+  mix-blend-mode: difference;
+}
+
+.btn-6:before,
+.btn-6:after {
+  content: "";
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+
+  position: absolute;
+  top: 0;
+  background: white;
+  transition: transform 0.4s;
+  will-change: transform;
+}
+.btn-6:before {
+  left: -100%;
+}
+.btn-6:after {
+  left: 100%;
+}
+.btn-6:hover:before {
+  transform: translateX(100%);
+}
+.btn-6:hover:after {
+  transform: translateX(-100%);
+}

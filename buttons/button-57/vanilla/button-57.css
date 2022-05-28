@@ -1,0 +1,31 @@
+.btn-57 {
+  display: block;
+  box-sizing: border-box;
+  padding: 20px 60px;
+  border-radius: 999px;
+
+  color: black;
+
+  position: relative;
+
+  font-weight: 900;
+  text-transform: uppercase;
+  border: 3px solid currentColor;
+}
+
+.btn-57:before {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  inset: 0;
+
+  background: white;
+  border-radius: 999px;
+
+  transform: translate(10px, 10px);
+  transition: transform 0.2s;
+}
+
+.btn-57:hover:before {
+  transform: translate(0);
+}

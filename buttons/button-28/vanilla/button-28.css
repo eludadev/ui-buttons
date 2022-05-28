@@ -1,0 +1,42 @@
+.btn-28 {
+  --tilt: 40deg;
+
+  display: block;
+  box-sizing: border-box;
+  padding: 30px 80px;
+
+  position: relative;
+
+  text-transform: uppercase;
+
+  perspective: 500px;
+  transform-style: preserve-3d;
+}
+
+.btn-28 .text-container {
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+
+  display: grid;
+  place-items: center;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  background: white;
+
+  transform-origin: center center;
+  transition: transform 0.2s;
+}
+.btn-28 .text {
+  font-weight: 900;
+  mix-blend-mode: difference;
+}
+.btn-28:hover .text-container {
+  transform: rotateY(var(--tilt));
+}
+.btn-28:hover .text-container:nth-child(2) {
+  transform: none;
+}

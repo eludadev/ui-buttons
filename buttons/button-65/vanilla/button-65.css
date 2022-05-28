@@ -1,0 +1,34 @@
+.btn-65 {
+  display: block;
+  box-sizing: border-box;
+  padding: 20px 60px;
+  border-radius: 999px;
+
+  position: relative;
+  overflow: hidden;
+
+  background: white;
+  color: black;
+
+  font-weight: 900;
+  text-transform: uppercase;
+  border: 1px solid currentColor;
+}
+/* From animate.css */
+
+.btn-65:hover {
+  animation: flash 0.8s;
+}
+
+@keyframes flash {
+  from,
+  50%,
+  to {
+    opacity: 1;
+  }
+
+  25%,
+  75% {
+    opacity: 0;
+  }
+}

@@ -1,0 +1,40 @@
+.btn-34 {
+  display: block;
+  box-sizing: border-box;
+  padding: 20px 45px;
+  border-radius: 999px;
+
+  position: relative;
+  overflow: hidden;
+
+  text-transform: uppercase;
+  border: 1px solid currentColor;
+
+  transition: transform 0.2s;
+}
+
+.btn-34:hover {
+  transform: scale(1.1);
+}
+
+.btn-34 span {
+  font-weight: 900;
+  mix-blend-mode: difference;
+}
+
+.btn-34:before {
+  content: "";
+  width: 0;
+  aspect-ratio: 1;
+
+  border-radius: 50%;
+  background: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: width 0.2s;
+}
+.btn-34:hover:before {
+  width: 100%;
+}

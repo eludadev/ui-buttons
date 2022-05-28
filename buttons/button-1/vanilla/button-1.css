@@ -1,0 +1,16 @@
+.btn-1 {
+  display: block;
+  box-sizing: border-box;
+  padding: 20px 45px;
+  border-radius: 999px;
+
+  position: relative;
+  font-weight: 900;
+  overflow: hidden;
+  text-transform: uppercase;
+  border: 1px solid currentColor;
+}
+
+.btn-1:hover {
+  color: #ddd;
+}

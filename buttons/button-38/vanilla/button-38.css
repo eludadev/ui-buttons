@@ -1,0 +1,53 @@
+.btn-38 {
+  display: block;
+  box-sizing: border-box;
+  padding: 20px 60px;
+
+  position: relative;
+  overflow: hidden;
+
+  text-transform: uppercase;
+  border: 1px solid currentColor;
+}
+
+.btn-38 .new,
+.btn-38 .old span {
+  font-weight: 900;
+  transition: transform 0.2s;
+}
+
+.btn-38 .new {
+  display: block;
+  transform: scale(0);
+}
+
+.btn-38:hover .new {
+  transform: scale(1);
+}
+
+.btn-38 .old {
+  position: absolute;
+  inset: 0;
+}
+.btn-38 .old span {
+  display: block;
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  background: white;
+  color: black;
+}
+.btn-38 .old span:nth-child(1) {
+  clip-path: polygon(0 0, 51% 0, 51% 100%, 0 100%);
+}
+.btn-38 .old span:nth-child(2) {
+  clip-path: polygon(50% 0, 100% 0, 100% 100%, 50% 100%);
+}
+
+.btn-38:hover .old span:nth-child(1) {
+  transform: translateX(-100%);
+}
+.btn-38:hover .old span:nth-child(2) {
+  transform: translateX(100%);
+}

@@ -1,0 +1,43 @@
+.btn-40 {
+  display: block;
+  box-sizing: border-box;
+  padding: 30px 70px;
+
+  position: relative;
+  overflow: hidden;
+
+  text-transform: uppercase;
+  border: 1px solid currentColor;
+
+  font-weight: 900;
+}
+
+.btn-40 .old,
+.btn-40 .new {
+  transition: transform 0.2s;
+}
+
+.btn-40 .old {
+  position: absolute;
+  inset: 0;
+
+  display: grid;
+  place-content: center;
+}
+
+.btn-40:hover .old {
+  transform: translateY(100%);
+}
+.btn-40 .new {
+  pointer-events: none;
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-content: center;
+  background: white;
+  color: black;
+  transform: translateX(-100%);
+}
+.btn-40:hover .new {
+  transform: translateX(0);
+}

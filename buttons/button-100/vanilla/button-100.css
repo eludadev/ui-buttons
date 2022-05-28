@@ -1,0 +1,59 @@
+.btn-100 {
+  --thickness: 4px;
+  --margin: 5px;
+
+  display: inline;
+  padding: 1px 2px;
+
+  position: relative;
+
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.btn-100:before {
+  pointer-events: none;
+  content: "";
+
+  width: 100%;
+  height: var(--thickness);
+
+  position: absolute;
+  bottom: calc(-1 * var(--thickness));
+  left: 0;
+
+  background: white;
+  animation: uncover 0.5s forwards;
+}
+.btn-100:hover:before {
+  animation: cover 0.5s forwards;
+}
+@keyframes cover {
+  0% {
+    bottom: calc(-1 * var(--margin));
+    height: var(--thickness);
+  }
+  50% {
+    bottom: calc(-1 * var(--margin));
+    height: 100%;
+  }
+  100% {
+    bottom: 100%;
+    height: var(--thickness);
+  }
+}
+
+@keyframes uncover {
+  100% {
+    bottom: calc(-1 * var(--margin));
+    height: var(--thickness);
+  }
+  50% {
+    bottom: calc(-1 * var(--margin));
+    height: 100%;
+  }
+  0% {
+    bottom: 100%;
+    height: var(--thickness);
+  }
+}

@@ -1,0 +1,32 @@
+.btn-39 {
+  display: block;
+  box-sizing: border-box;
+  padding: 20px 60px;
+
+  position: relative;
+  overflow: hidden;
+
+  text-transform: uppercase;
+  border: 1px solid currentColor;
+
+  font-weight: 900;
+}
+
+.btn-39 .new {
+  pointer-events: none;
+  position: absolute;
+  inset: 0;
+
+  display: grid;
+  place-content: center;
+
+  background: white;
+  color: black;
+
+  transform: translateX(-100%);
+
+  transition: transform 0.2s;
+}
+.btn-39:hover .new {
+  transform: translateX(0);
+}

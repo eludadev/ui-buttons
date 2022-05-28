@@ -1,0 +1,38 @@
+.btn-47 {
+  display: block;
+  box-sizing: border-box;
+  padding: 20px 60px;
+
+  position: relative;
+
+  font-weight: 900;
+  text-transform: uppercase;
+
+  transform-style: preserve-3d;
+  perspective: 800px;
+
+  background: #fff;
+  color: black;
+
+  transform: rotateY(12deg);
+
+  transition: transform 0.2s;
+}
+
+.btn-47:before {
+  position: absolute;
+  content: "";
+  z-index: -1;
+  top: 0;
+  left: 0;
+
+  display: block;
+  height: 100%;
+  width: 20%;
+  background: #eee;
+  transform-origin: 0% 0%;
+  transform: rotateY(90deg);
+}
+.btn-47:hover {
+  transform: rotateY(20deg);
+}

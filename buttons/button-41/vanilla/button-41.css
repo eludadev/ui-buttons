@@ -1,0 +1,31 @@
+.btn-41 {
+  display: block;
+  box-sizing: border-box;
+  padding: 20px 60px;
+  border-radius: 999px;
+
+  position: relative;
+  overflow: hidden;
+
+  text-transform: uppercase;
+  border: 2px solid white;
+
+  font-weight: 900;
+  color: black;
+}
+
+.btn-41:before {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  inset: 0;
+
+  background: white;
+
+  border-radius: 999px;
+
+  transition: transform 0.2s;
+}
+.btn-41:hover:before {
+  transform: scale(0.7);
+}

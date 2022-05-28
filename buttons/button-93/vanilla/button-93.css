@@ -1,0 +1,21 @@
+.btn-93 {
+  display: block;
+  box-sizing: border-box;
+  padding: 20px 80px;
+
+  border-radius: 50px 15px 15px 15px/15px 225px 255px 255px;
+
+  position: relative;
+  overflow: hidden;
+
+  font-weight: 900;
+  text-transform: uppercase;
+  border: 3px solid currentColor;
+
+  transition: 0.2s;
+}
+
+.btn-93:hover {
+  box-shadow: 0 0.5em 0.5em -0.4em white;
+  transform: translateY(-0.25em);
+}

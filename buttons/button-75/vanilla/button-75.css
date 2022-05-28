@@ -1,0 +1,22 @@
+.btn-75 {
+  display: block;
+  box-sizing: border-box;
+  padding: 20px 60px;
+  border-radius: 999px;
+
+  position: relative;
+  overflow: hidden;
+
+  font-weight: 900;
+  text-transform: uppercase;
+
+  background: #e0e5ec;
+  color: #000;
+
+  box-shadow: inset 2px 2px 2px 0px rgb(255 255 255 / 50%),
+    7px 7px 20px 0px rgb(0 0 0 / 10%), 4px 4px 5px 0px rgb(0 0 0 / 10%);
+}
+
+.btn-75:active {
+  transform: translateY(3px);
+}

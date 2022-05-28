@@ -1,0 +1,59 @@
+.btn-58 {
+  display: block;
+  box-sizing: border-box;
+  padding: 20px 60px;
+  border-radius: 999px;
+
+  position: relative;
+
+  color: black;
+
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.btn-58:before {
+  pointer-events: none;
+  content: "";
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  background: white;
+  border-radius: 999px;
+
+  transition: 0.4s;
+}
+.btn-58:after {
+  pointer-events: none;
+  z-index: -1;
+  content: "";
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.2);
+  position: absolute;
+  top: 80%;
+  left: 90%;
+  backdrop-filter: blur(20px);
+  transition: 0.4s;
+}
+.btn-58:hover:before {
+  width: 90%;
+  height: 90%;
+
+  left: 5%;
+  top: 10%;
+}
+.btn-58:hover:after {
+  top: 10%;
+  left: 5%;
+
+  width: 90%;
+  height: 80%;
+
+  border-radius: 10px;
+}

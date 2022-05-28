@@ -1,0 +1,41 @@
+.btn-88 {
+  box-sizing: border-box;
+  display: block;
+  height: 90px;
+  width: 90px;
+
+  border-radius: 50%;
+
+  position: relative;
+
+  padding: 15px;
+
+  text-transform: uppercase;
+  outline: 5px solid currentColor;
+}
+
+.btn-88 svg {
+  fill: black;
+}
+
+.btn-88:hover svg {
+  fill: white;
+
+  animation: alternate 0.5s;
+}
+
+.btn-88:before {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  inset: 4px;
+  border-radius: 50%;
+  background: white;
+  opacity: 1;
+  transform: scale(1);
+  transition: 0.5s;
+}
+.btn-88:hover:before {
+  transform: scale(4);
+  opacity: 0;
+}

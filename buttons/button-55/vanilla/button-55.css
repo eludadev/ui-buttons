@@ -1,0 +1,32 @@
+.btn-55 {
+  display: block;
+  box-sizing: border-box;
+  padding: 30px 90px;
+  border-radius: 999px;
+
+  position: relative;
+  overflow: hidden;
+
+  font-weight: 900;
+  text-transform: uppercase;
+
+  color: black;
+  background: linear-gradient(to right, blue, red);
+}
+
+.btn-55 span {
+  position: absolute;
+  inset: 5px;
+
+  display: grid;
+  place-items: center;
+
+  border-radius: 999px;
+
+  color: white;
+  background: rgb(30 41 59);
+  transition: background 0.3s;
+}
+.btn-55:hover span {
+  background: none;
+}

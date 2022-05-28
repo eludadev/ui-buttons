@@ -1,0 +1,34 @@
+.btn-2 {
+  display: block;
+  box-sizing: border-box;
+  padding: 20px 45px;
+  border-radius: 999px;
+
+  position: relative;
+  overflow: hidden;
+
+  text-transform: uppercase;
+  border: 1px solid currentColor;
+}
+
+.btn-2 span {
+  font-weight: 900;
+  mix-blend-mode: difference;
+}
+
+.btn-2:before {
+  content: "";
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: -100%;
+
+  background: white;
+  transition: transform 0.2s;
+  will-change: transform;
+}
+.btn-2:hover:before {
+  transform: translateX(100%);
+}

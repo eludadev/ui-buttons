@@ -1,0 +1,20 @@
+.btn-32 {
+  display: block;
+  box-sizing: border-box;
+  padding: 20px 45px;
+
+  position: relative;
+
+  color: black;
+  font-weight: 900;
+  background: white;
+  text-transform: uppercase;
+  outline: 1px solid white;
+
+  border: 0px solid transparent;
+  transition: border 0.2s;
+}
+
+.btn-32:hover {
+  border: 12px solid rgb(30 41 59);
+}
