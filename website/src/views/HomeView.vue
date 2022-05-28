@@ -10,19 +10,15 @@
         },
         data() {
             return {
-                buttonsBannerUrl,
-                buttons: []
+                buttonsBannerUrl
             }
         },
-        async mounted() {
-            // Get total buttons count
-            const total = await this.getTotalCount()
-            console.log(total)
-            // 
-        },
         methods: {
-            async loadButton(id) {
-                this.buttons.push({id: Math.max(...this.buttons.map(b => b.id)) + 1})
+            makeLinkUrl(id) {
+                return `https://github.com/eludadev/css-buttons/tree/main/buttons/button-${id}/vanilla`
+            },
+            makeLinkTitle(id) {
+                return `Source code for button ${id}`
             }
         }
     }
@@ -33,13 +29,20 @@
         <img class="w-3/4 sm:w-1/2 lg:w-96 absolute
         top-1/2 transform -translate-y-1/2
         left-1/2 transform -translate-x-1/2
-        " :src="buttonsBannerUrl"/>
+        " :src="buttonsBannerUrl"
+        alt="100 Buttons"/>
     </header>
 
-    <main class="mx-2 mt-8">
-        <ul class="flex flex-col gap-4" ref="buttonsList">
-            <li v-for="{ id } in buttons">
-                <button-item :id="Number(id)"/>
+    <main class="mx-2">
+        <p class="text-stone-50">Collection of 100 free and royalty-free <strong class="font-bold">HTML and CSS button</strong> code examples.</p>
+        <ul class="mt-8 mb-4 flex flex-col gap-4 
+        sm:flex-row sm:flex-wrap sm:justify-center" ref="buttonsList">
+            <li v-for="i in 100" :key="i">
+                <Suspense>
+                    <template #default>
+                        <a :href="makeLinkUrl(i)" target="_blank" :title="makeLinkTitle(i)" :aria-label="makeLinkTitle(i)"><button-item :id="i" class="sm:w-80"/></a>
+                    </template>
+                </Suspense>
             </li>
         </ul>
     </main>
