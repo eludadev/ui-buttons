@@ -11,7 +11,6 @@ body:after {
     pointer-events: none;
     position: absolute;
     top: 6rem;
-    left: -5rem;
     z-index: -99;
 
     width: 25rem;
@@ -22,10 +21,13 @@ body:after {
     background: red;
     filter: blur(200px);
 }
+body:before {
+    left: 0;
+}
 body:after {
     background: blue;
-    left: 70%;
     top: 20rem;
+    right: 0;
 }
 
 /* Main Scrollbar */

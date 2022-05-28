@@ -36,11 +36,12 @@
     <main class="mx-2">
         <p class="text-stone-50">Collection of 100 free and royalty-free <strong class="font-bold">HTML and CSS button</strong> code examples.</p>
         <ul class="mt-8 mb-4 flex flex-col gap-4 
+        mx-auto
         sm:flex-row sm:flex-wrap sm:justify-center" ref="buttonsList">
             <li v-for="i in 100" :key="i">
                 <Suspense>
                     <template #default>
-                        <a :href="makeLinkUrl(i)" target="_blank" :title="makeLinkTitle(i)" :aria-label="makeLinkTitle(i)"><button-item :id="i" class="sm:w-80"/></a>
+                        <a :href="makeLinkUrl(i)" target="_blank" :title="makeLinkTitle(i)" :aria-label="makeLinkTitle(i)" class=""><button-item :id="i" class="sm:w-80"/></a>
                     </template>
                 </Suspense>
             </li>
