@@ -11,13 +11,6 @@
         "source": "**",
         "destination": "/index.html"
       }
-    ],
-    "headers": [ {
-      "source": "**",
-      "headers": [ {
-        "key": "**/*.@(css|woff|js)",
-        "value": "max-age=31536000"
-      } ]
-    } ]
+    ]
   }
 }
