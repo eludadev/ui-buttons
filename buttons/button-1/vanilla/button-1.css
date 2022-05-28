@@ -9,8 +9,11 @@
   overflow: hidden;
   text-transform: uppercase;
   border: 1px solid currentColor;
+
+  font-size: 1rem;
+  background: #eee;
 }
 
 .btn-1:hover {
-  color: #ddd;
+  color: #151515;
 }

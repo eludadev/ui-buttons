@@ -7,13 +7,18 @@
   position: relative;
   overflow: hidden;
 
+  color: #fff;
   text-transform: uppercase;
   border: 1px solid currentColor;
+
+  background: transparent;
+  -webkit-mask-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAIAAACQd1PeAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAA5JREFUeNpiYGBgAAgwAAAEAAGbA+oJAAAAAElFTkSuQmCC);
+
+  transition: color .2s;
 }
 
-.btn-2 span {
-  font-weight: 900;
-  mix-blend-mode: difference;
+.btn-2:hover {
+  color: #000;
 }
 
 .btn-2:before {
@@ -25,7 +30,7 @@
   top: 0;
   left: -100%;
 
-  background: white;
+  background: #fff;
   transition: transform 0.2s;
   will-change: transform;
 }
