@@ -1,30 +1,31 @@
 import { defineStore } from 'pinia'
 
 export default defineStore('buttons', {
-	actions: {
-		async getItem(id) {
-			const urlAccessor = (ext) => `https://raw.githubusercontent.com/eludadev/css-buttons/main/buttons/button-${id}/vanilla/button-${id}.${ext}`
-		
-			async function getRawFile(ext) {
-				const url = urlAccessor(ext)
-				const res = await fetch(url)
-				return ext === 'json' ? await res.json() : await res.text()
-			}
+    actions: {
+        async getItem(id) {
+            const urlAccessor = (ext) =>
+                `https://raw.githubusercontent.com/eludadev/css-buttons/main/buttons/button-${id}/vanilla/button-${id}.${ext}`
 
-			const button = {
-				id
-			}
+            async function getRawFile(ext) {
+                const url = urlAccessor(ext)
+                const res = await fetch(url)
+                return ext === 'json' ? await res.json() : await res.text()
+            }
 
-			for (const ext of ['html', 'css', 'json']) {
-				const data = await getRawFile(ext)
-				if (ext === 'json') {
-					button.name = data.name
-				} else {
-					button[ext] = data
-				}
-			}
+            const button = {
+                id,
+            }
 
-			return button
-		}
-	}
+            for (const ext of ['html', 'css', 'json']) {
+                const data = await getRawFile(ext)
+                if (ext === 'json') {
+                    button.name = data.name
+                } else {
+                    button[ext] = data
+                }
+            }
+
+            return button
+        },
+    },
 })
