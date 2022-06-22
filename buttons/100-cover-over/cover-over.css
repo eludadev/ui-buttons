@@ -1,0 +1,120 @@
+.btn-100,
+.btn-100 *,
+.btn-100 :after,
+.btn-100 :before,
+.btn-100:after,
+.btn-100:before {
+  border: 0 solid;
+  box-sizing: border-box;
+}
+.btn-100 {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-appearance: button;
+  background-color: #000;
+  background-image: none;
+  color: #fff;
+  cursor: pointer;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
+    Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  font-size: 100%;
+  line-height: 1.5;
+  margin: 0;
+  -webkit-mask-image: -webkit-radial-gradient(#000, #fff);
+  padding: 0;
+}
+.btn-100:disabled {
+  cursor: default;
+}
+.btn-100:-moz-focusring {
+  outline: auto;
+}
+.btn-100 svg {
+  display: block;
+  vertical-align: middle;
+}
+.btn-100 [hidden] {
+  display: none;
+}
+.btn-100 {
+  --thickness: 4px;
+  --margin: 5px;
+  background: none;
+  display: inline;
+  font-weight: 900;
+  padding: 1px 2px;
+  position: relative;
+  text-transform: uppercase;
+}
+.btn-100:before {
+  -webkit-animation: uncover 0.5s forwards;
+  animation: uncover 0.5s forwards;
+  background: #fff;
+  bottom: calc(var(--thickness) * -1);
+  content: "";
+  height: var(--thickness);
+  left: 0;
+  pointer-events: none;
+  position: absolute;
+  width: 100%;
+}
+.btn-100:hover:before {
+  -webkit-animation: cover 0.5s forwards;
+  animation: cover 0.5s forwards;
+}
+@-webkit-keyframes cover {
+  0% {
+    bottom: calc(var(--margin) * -1);
+    height: var(--thickness);
+  }
+  50% {
+    bottom: calc(var(--margin) * -1);
+    height: 100%;
+  }
+  to {
+    bottom: 100%;
+    height: var(--thickness);
+  }
+}
+@keyframes cover {
+  0% {
+    bottom: calc(var(--margin) * -1);
+    height: var(--thickness);
+  }
+  50% {
+    bottom: calc(var(--margin) * -1);
+    height: 100%;
+  }
+  to {
+    bottom: 100%;
+    height: var(--thickness);
+  }
+}
+@-webkit-keyframes uncover {
+  to {
+    bottom: calc(var(--margin) * -1);
+    height: var(--thickness);
+  }
+  50% {
+    bottom: calc(var(--margin) * -1);
+    height: 100%;
+  }
+  0% {
+    bottom: 100%;
+    height: var(--thickness);
+  }
+}
+@keyframes uncover {
+  to {
+    bottom: calc(var(--margin) * -1);
+    height: var(--thickness);
+  }
+  50% {
+    bottom: calc(var(--margin) * -1);
+    height: 100%;
+  }
+  0% {
+    bottom: 100%;
+    height: var(--thickness);
+  }
+}

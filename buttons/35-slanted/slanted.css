@@ -1,0 +1,71 @@
+.btn-35,
+.btn-35 *,
+.btn-35 :after,
+.btn-35 :before,
+.btn-35:after,
+.btn-35:before {
+  border: 0 solid;
+  box-sizing: border-box;
+}
+.btn-35 {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-appearance: button;
+  background-color: #000;
+  background-image: none;
+  color: #fff;
+  cursor: pointer;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
+    Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  font-size: 100%;
+  font-weight: 900;
+  line-height: 1.5;
+  margin: 0;
+  -webkit-mask-image: -webkit-radial-gradient(#000, #fff);
+  padding: 0;
+}
+.btn-35:disabled {
+  cursor: default;
+}
+.btn-35:-moz-focusring {
+  outline: auto;
+}
+.btn-35 svg {
+  display: block;
+  vertical-align: middle;
+}
+.btn-35 [hidden] {
+  display: none;
+}
+.btn-35 {
+  --height: 4rem;
+  border: 1px solid;
+  box-sizing: border-box;
+  display: block;
+  height: var(--height);
+  overflow: hidden;
+  padding: 0 3rem;
+  position: relative;
+  text-transform: uppercase;
+}
+.btn-35 span {
+  font-weight: 900;
+  mix-blend-mode: difference;
+}
+.btn-35:before {
+  --middle: calc(var(--height) / 2);
+  background: #fff;
+  content: "";
+  height: 100%;
+  left: calc(var(--height) * -1);
+  position: absolute;
+  top: 0;
+  transform: rotate(-90deg);
+  transform-origin: var(--middle) var(--middle);
+  transition: transform 0.3s;
+  width: calc(100% + var(--height));
+  z-index: -1;
+}
+.btn-35:hover:before {
+  transform: rotate(0deg);
+}

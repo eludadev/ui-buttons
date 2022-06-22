@@ -1,0 +1,4 @@
+{
+  "name": "ShapeShifter",
+  "description": "CSS Button that morphs one side of its border into a triangle pseudo-element on click or hover."
+}

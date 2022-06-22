@@ -1,0 +1,83 @@
+.btn-51,
+.btn-51 *,
+.btn-51 :after,
+.btn-51 :before,
+.btn-51:after,
+.btn-51:before {
+  border: 0 solid;
+  box-sizing: border-box;
+}
+.btn-51 {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-appearance: button;
+  background-color: #000;
+  background-image: none;
+  color: #fff;
+  cursor: pointer;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
+    Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  font-size: 100%;
+  line-height: 1.5;
+  margin: 0;
+  -webkit-mask-image: -webkit-radial-gradient(#000, #fff);
+  padding: 0;
+}
+.btn-51:disabled {
+  cursor: default;
+}
+.btn-51:-moz-focusring {
+  outline: auto;
+}
+.btn-51 svg {
+  display: block;
+  vertical-align: middle;
+}
+.btn-51 [hidden] {
+  display: none;
+}
+.btn-51 {
+  --progress: 15px;
+  background: #fff;
+  bottom: var(--progress);
+  box-sizing: border-box;
+  color: #000;
+  display: block;
+  font-weight: 900;
+  -webkit-mask-image: none;
+  padding: 1.2rem 3rem;
+  perspective: 800px;
+  position: relative;
+  text-transform: uppercase;
+  transform: rotateX(55deg) rotate(25deg);
+  transform-style: preserve-3d;
+  transition: bottom 0.2s;
+}
+.btn-51:after,
+.btn-51:before {
+  content: "";
+  display: block;
+  position: absolute;
+  transform-origin: 0 0;
+}
+.btn-51:before {
+  background: #eee;
+  height: var(--progress);
+  left: 0;
+  top: 100%;
+  transform: rotateX(-90deg);
+  transition: height 0.2s;
+  width: 100%;
+}
+.btn-51:after {
+  background: #ccc;
+  height: 100%;
+  left: 100%;
+  top: 0;
+  transform: rotateY(90deg);
+  transition: width 0.2s;
+  width: var(--progress);
+}
+.btn-51:active {
+  --progress: 0px;
+}

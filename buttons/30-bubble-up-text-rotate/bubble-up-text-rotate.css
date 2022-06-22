@@ -1,0 +1,107 @@
+.btn-30,
+.btn-30 *,
+.btn-30 :after,
+.btn-30 :before,
+.btn-30:after,
+.btn-30:before {
+  border: 0 solid;
+  box-sizing: border-box;
+}
+.btn-30 {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-appearance: button;
+  background-color: #000;
+  background-image: none;
+  color: #fff;
+  cursor: pointer;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
+    Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  font-size: 100%;
+  font-weight: 900;
+  line-height: 1.5;
+  margin: 0;
+  -webkit-mask-image: -webkit-radial-gradient(#000, #fff);
+  padding: 0;
+  text-transform: uppercase;
+}
+.btn-30:disabled {
+  cursor: default;
+}
+.btn-30:-moz-focusring {
+  outline: auto;
+}
+.btn-30 svg {
+  display: block;
+  vertical-align: middle;
+}
+.btn-30 [hidden] {
+  display: none;
+}
+.btn-30 {
+  border-radius: 999px;
+  border-width: 1px;
+  overflow: hidden;
+  padding: 1rem 2rem;
+  position: relative;
+}
+.btn-30 span {
+  mix-blend-mode: difference;
+}
+.btn-30:before {
+  aspect-ratio: 1;
+  background: #fff;
+  border-radius: 50%;
+  content: "";
+  height: 0;
+  left: 50%;
+  position: absolute;
+  top: -200%;
+  transform: translateX(-50%);
+  transition: height 0.3s;
+}
+.btn-30:hover:before {
+  height: 400%;
+}
+.btn-30 .text-container {
+  display: block;
+  overflow: hidden;
+  position: relative;
+}
+.btn-30 .text {
+  display: block;
+  mix-blend-mode: difference;
+  position: relative;
+}
+.btn-30:hover .text {
+  -webkit-animation: move-up-alternate 0.3s ease forwards;
+  animation: move-up-alternate 0.3s ease forwards;
+}
+@-webkit-keyframes move-up-alternate {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(80%);
+  }
+  51% {
+    transform: translateY(-80%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+@keyframes move-up-alternate {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(80%);
+  }
+  51% {
+    transform: translateY(-80%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}

@@ -1,0 +1,91 @@
+.btn-33,
+.btn-33 *,
+.btn-33 :after,
+.btn-33 :before,
+.btn-33:after,
+.btn-33:before {
+  border: 0 solid;
+  box-sizing: border-box;
+}
+.btn-33 {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-appearance: button;
+  background-color: #000;
+  background-image: none;
+  color: #fff;
+  cursor: pointer;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
+    Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  font-size: 100%;
+  font-weight: 900;
+  line-height: 1.5;
+  margin: 0;
+  -webkit-mask-image: -webkit-radial-gradient(#000, #fff);
+  padding: 0;
+  text-transform: uppercase;
+}
+.btn-33:disabled {
+  cursor: default;
+}
+.btn-33:-moz-focusring {
+  outline: auto;
+}
+.btn-33 svg {
+  display: block;
+  vertical-align: middle;
+}
+.btn-33 [hidden] {
+  display: none;
+}
+.btn-33 {
+  border-radius: 99rem;
+  border-width: 2px;
+  overflow: hidden;
+  padding: 0.8rem 3rem;
+  position: relative;
+}
+.btn-33 span {
+  display: grid;
+  inset: 0;
+  place-items: center;
+  position: absolute;
+  transition: opacity 0.2s ease;
+}
+.btn-33 .marquee {
+  --spacing: 5em;
+  --start: 0em;
+  --end: 5em;
+  -webkit-animation: marquee 0.4s linear infinite;
+  animation: marquee 0.4s linear infinite;
+  -webkit-animation-play-state: paused;
+  animation-play-state: paused;
+  opacity: 0;
+  position: relative;
+  text-shadow: #fff 0 var(--spacing), #fff 0 calc(var(--spacing) * -1),
+    #fff 0 calc(var(--spacing) * -2);
+}
+.btn-33:hover .marquee {
+  -webkit-animation-play-state: running;
+  animation-play-state: running;
+  opacity: 1;
+}
+.btn-33:hover .text {
+  opacity: 0;
+}
+@-webkit-keyframes marquee {
+  0% {
+    transform: translateY(var(--start));
+  }
+  to {
+    transform: translateY(var(--end));
+  }
+}
+@keyframes marquee {
+  0% {
+    transform: translateY(var(--start));
+  }
+  to {
+    transform: translateY(var(--end));
+  }
+}

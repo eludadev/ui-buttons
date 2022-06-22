@@ -1,0 +1,75 @@
+.btn-88,
+.btn-88 *,
+.btn-88 :after,
+.btn-88 :before,
+.btn-88:after,
+.btn-88:before {
+  border: 0 solid;
+  box-sizing: border-box;
+}
+.btn-88 {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-appearance: button;
+  background-color: #000;
+  background-image: none;
+  color: #fff;
+  cursor: pointer;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
+    Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  font-size: 100%;
+  font-weight: 900;
+  line-height: 1.5;
+  margin: 0;
+  -webkit-mask-image: -webkit-radial-gradient(#000, #fff);
+  padding: 0;
+}
+.btn-88:disabled {
+  cursor: default;
+}
+.btn-88:-moz-focusring {
+  outline: auto;
+}
+.btn-88 svg {
+  display: block;
+  vertical-align: middle;
+}
+.btn-88 [hidden] {
+  display: none;
+}
+.btn-88 {
+  background: none;
+  border: 5px solid;
+  border-radius: 50%;
+  box-sizing: border-box;
+  display: block;
+  height: 90px;
+  -webkit-mask-image: none;
+  padding: 15px;
+  position: relative;
+  text-transform: uppercase;
+  width: 90px;
+}
+.btn-88 svg {
+  fill: #000;
+  position: relative;
+  z-index: 1;
+}
+.btn-88:hover svg {
+  fill: #fff;
+}
+.btn-88:before {
+  background: #fff;
+  border-radius: 50%;
+  content: "";
+  inset: 4px;
+  opacity: 1;
+  pointer-events: none;
+  position: absolute;
+  transform: scale(1);
+  transition: 0.5s;
+}
+.btn-88:hover:before {
+  opacity: 0;
+  transform: scale(4);
+}

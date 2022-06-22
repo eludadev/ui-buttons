@@ -1,0 +1,132 @@
+.btn-86,
+.btn-86 *,
+.btn-86 :after,
+.btn-86 :before,
+.btn-86:after,
+.btn-86:before {
+  border: 0 solid;
+  box-sizing: border-box;
+}
+.btn-86 {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-appearance: button;
+  background-color: #000;
+  background-image: none;
+  color: #fff;
+  cursor: pointer;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
+    Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  font-size: 100%;
+  font-weight: 900;
+  line-height: 1.5;
+  margin: 0;
+  -webkit-mask-image: -webkit-radial-gradient(#000, #fff);
+  padding: 0;
+}
+.btn-86:disabled {
+  cursor: default;
+}
+.btn-86:-moz-focusring {
+  outline: auto;
+}
+.btn-86 svg {
+  display: block;
+  vertical-align: middle;
+}
+.btn-86 [hidden] {
+  display: none;
+}
+.btn-86 {
+  border: 1px solid;
+  border-radius: 999px;
+  box-sizing: border-box;
+  display: grid;
+  display: block;
+  font-weight: 700;
+  overflow: hidden;
+  padding: 1.2rem 3rem;
+  place-items: center;
+  position: relative;
+  text-transform: uppercase;
+}
+.btn-86 .fallback {
+  display: none;
+}
+.btn-86 .letters {
+  display: flex;
+}
+.btn-86 span {
+  mix-blend-mode: difference;
+  position: relative;
+}
+.btn-86 span:first-child,
+.btn-86 span:nth-child(6) {
+  --mov: 0;
+  --rot: 1;
+}
+.btn-86 span:nth-child(2),
+.btn-86 span:nth-child(5) {
+  --mov: 1/3;
+  --rot: 2/3;
+}
+.btn-86 span:nth-child(3),
+.btn-86 span:nth-child(4) {
+  --mov: 2/3;
+  --rot: 1/3;
+}
+.btn-86:hover span {
+  -webkit-animation: dance 0.7s linear 0.18s forwards;
+  animation: dance 0.7s linear 0.18s forwards;
+}
+@-webkit-keyframes dance {
+  30%,
+  36% {
+    transform: translateY(calc(-6px * var(--mov))) translateZ(0)
+      rotate(calc(-13deg * var(--rot)));
+  }
+  50% {
+    transform: translateY(calc(3px * var(--mov))) translateZ(0)
+      rotate(calc(6deg * var(--rot)));
+  }
+  70% {
+    transform: translateY(calc(-2px * var(--mov))) translateZ(0)
+      rotate(calc(-3deg * var(--rot)));
+  }
+}
+@keyframes dance {
+  30%,
+  36% {
+    transform: translateY(calc(-6px * var(--mov))) translateZ(0)
+      rotate(calc(-13deg * var(--rot)));
+  }
+  50% {
+    transform: translateY(calc(3px * var(--mov))) translateZ(0)
+      rotate(calc(6deg * var(--rot)));
+  }
+  70% {
+    transform: translateY(calc(-2px * var(--mov))) translateZ(0)
+      rotate(calc(-3deg * var(--rot)));
+  }
+}
+.btn-86:after,
+.btn-86:before {
+  background: #000;
+  content: "";
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 100%;
+  transition: transform 0.2s cubic-bezier(0.76, 0, 0.24, 1);
+  width: 100%;
+  will-change: transform;
+  z-index: -1;
+}
+.btn-86:hover:after,
+.btn-86:hover:before {
+  transform: translateY(-100%);
+}
+.btn-86:after {
+  background: #fff;
+  transition-delay: 0.13s;
+}

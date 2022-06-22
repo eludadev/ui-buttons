@@ -1,0 +1,138 @@
+.btn-84,
+.btn-84 *,
+.btn-84 :after,
+.btn-84 :before,
+.btn-84:after,
+.btn-84:before {
+  border: 0 solid;
+  box-sizing: border-box;
+}
+.btn-84 {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-appearance: button;
+  background-color: #000;
+  background-image: none;
+  color: #fff;
+  cursor: pointer;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
+    Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  font-size: 100%;
+  line-height: 1.5;
+  margin: 0;
+  -webkit-mask-image: -webkit-radial-gradient(#000, #fff);
+  padding: 0;
+}
+.btn-84:disabled {
+  cursor: default;
+}
+.btn-84:-moz-focusring {
+  outline: auto;
+}
+.btn-84 svg {
+  display: block;
+  vertical-align: middle;
+}
+.btn-84 [hidden] {
+  display: none;
+}
+.btn-84 {
+  background: #fff;
+  box-sizing: border-box;
+  color: #000;
+  display: block;
+  font-weight: 900;
+  -webkit-mask-image: none;
+  padding: 1.2rem 3rem;
+  perspective: 800px;
+  position: relative;
+  text-transform: uppercase;
+  transform: rotateX(8deg);
+  transform-style: preserve-3d;
+  transition: transform 0.2s;
+}
+.btn-84:hover {
+  transform: rotateX(25deg);
+}
+.btn-84:after,
+.btn-84:before {
+  background: #eee;
+  content: "";
+  display: block;
+  height: 20%;
+  left: 0;
+  position: absolute;
+  top: 100%;
+  transform: rotateX(-90deg);
+  transform-origin: 0 0;
+  width: 100%;
+  z-index: -1;
+}
+.btn-84:after {
+  background: #ccc;
+  z-index: -2;
+}
+.btn-84:hover:before {
+  -webkit-animation: progress-bar 1.2s forwards;
+  animation: progress-bar 1.2s forwards;
+}
+@-webkit-keyframes progress-bar {
+  0% {
+    opacity: 1;
+    width: 0;
+  }
+  10% {
+    opacity: 1;
+    width: 15%;
+  }
+  25% {
+    opacity: 1;
+    width: 25%;
+  }
+  40% {
+    opacity: 1;
+    width: 35%;
+  }
+  55% {
+    opacity: 1;
+    width: 75%;
+  }
+  60% {
+    opacity: 1;
+    width: 100%;
+  }
+  to {
+    opacity: 0;
+    width: 100%;
+  }
+}
+@keyframes progress-bar {
+  0% {
+    opacity: 1;
+    width: 0;
+  }
+  10% {
+    opacity: 1;
+    width: 15%;
+  }
+  25% {
+    opacity: 1;
+    width: 25%;
+  }
+  40% {
+    opacity: 1;
+    width: 35%;
+  }
+  55% {
+    opacity: 1;
+    width: 75%;
+  }
+  60% {
+    opacity: 1;
+    width: 100%;
+  }
+  to {
+    opacity: 0;
+    width: 100%;
+  }
+}

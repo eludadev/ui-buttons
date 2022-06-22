@@ -1,0 +1,107 @@
+.btn-91,
+.btn-91 *,
+.btn-91 :after,
+.btn-91 :before,
+.btn-91:after,
+.btn-91:before {
+  border: 0 solid;
+  box-sizing: border-box;
+}
+.btn-91 {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-appearance: button;
+  background-color: #000;
+  background-image: none;
+  color: #fff;
+  cursor: pointer;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
+    Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  font-size: 100%;
+  font-weight: 900;
+  line-height: 1.5;
+  margin: 0;
+  -webkit-mask-image: -webkit-radial-gradient(#000, #fff);
+  padding: 0;
+}
+.btn-91:disabled {
+  cursor: default;
+}
+.btn-91:-moz-focusring {
+  outline: auto;
+}
+.btn-91 svg {
+  display: block;
+  vertical-align: middle;
+}
+.btn-91 [hidden] {
+  display: none;
+}
+.btn-91 {
+  background: none;
+  border: 2px solid;
+  border-radius: 999px;
+  box-sizing: border-box;
+  display: block;
+  padding: 1.2rem 3rem;
+  position: relative;
+  text-transform: uppercase;
+}
+.btn-91 span {
+  font-weight: 900;
+}
+.btn-91:after,
+.btn-91:before {
+  border: 2px solid red;
+  border-radius: 999px;
+  content: "";
+  inset: -2px;
+  position: absolute;
+  z-index: -1;
+}
+.btn-91:after {
+  border-color: blue;
+}
+.btn-91:hover:before {
+  -webkit-animation: glitch-border 0.2s infinite;
+  animation: glitch-border 0.2s infinite;
+}
+.btn-91:hover:after {
+  animation: glitch-border 0.2s infinite reverse;
+}
+.btn-91:hover span {
+  -webkit-animation: glitch-text 0.2s infinite;
+  animation: glitch-text 0.2s infinite;
+}
+@-webkit-keyframes glitch-text {
+  0% {
+    text-shadow: 0 0 0 red, 0 0 0 blue;
+  }
+  to {
+    text-shadow: -2px 1px 0 red, 2px -1px 0 blue;
+  }
+}
+@keyframes glitch-text {
+  0% {
+    text-shadow: 0 0 0 red, 0 0 0 blue;
+  }
+  to {
+    text-shadow: -2px 1px 0 red, 2px -1px 0 blue;
+  }
+}
+@-webkit-keyframes glitch-border {
+  0% {
+    transform: translate(2px, -1px);
+  }
+  to {
+    transform: translate(-2px, -1px);
+  }
+}
+@keyframes glitch-border {
+  0% {
+    transform: translate(2px, -1px);
+  }
+  to {
+    transform: translate(-2px, -1px);
+  }
+}
