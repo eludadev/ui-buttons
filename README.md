@@ -1,4 +1,4 @@
-[![](./assets/banner.png)](https://css-buttons.web.app)
+[![](./assets/banner.png)](https://uibuttons.vercel.app)
 
 ## 🚀️ We're on Product Hunt!
 
