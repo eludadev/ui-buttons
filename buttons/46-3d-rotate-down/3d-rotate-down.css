@@ -1,13 +1,13 @@
-.btn-46,
-.btn-46 *,
-.btn-46 :after,
-.btn-46 :before,
-.btn-46:after,
-.btn-46:before {
+.btn-49,
+.btn-49 *,
+.btn-49 :after,
+.btn-49 :before,
+.btn-49:after,
+.btn-49:before {
   border: 0 solid;
   box-sizing: border-box;
 }
-.btn-46 {
+.btn-49 {
   -webkit-tap-highlight-color: transparent;
   -webkit-appearance: button;
   background-color: #000;
@@ -23,20 +23,20 @@
   -webkit-mask-image: -webkit-radial-gradient(#000, #fff);
   padding: 0;
 }
-.btn-46:disabled {
+.btn-49:disabled {
   cursor: default;
 }
-.btn-46:-moz-focusring {
+.btn-49:-moz-focusring {
   outline: auto;
 }
-.btn-46 svg {
+.btn-49 svg {
   display: block;
   vertical-align: middle;
 }
-.btn-46 [hidden] {
+.btn-49 [hidden] {
   display: none;
 }
-.btn-46 {
+.btn-49 {
   background: #fff;
   box-sizing: border-box;
   color: #000;
@@ -47,22 +47,22 @@
   perspective: 800px;
   position: relative;
   text-transform: uppercase;
-  transform: rotateX(8deg);
+  transform: rotateX(-8deg);
   transform-style: preserve-3d;
   transition: transform 0.2s;
 }
-.btn-46:before {
+.btn-49:before {
   background: #eee;
   content: "";
   display: block;
   height: 20%;
   left: 0;
   position: absolute;
-  top: 100%;
+  top: 0;
   transform: rotateX(-90deg);
   transform-origin: 0 0;
   width: 100%;
 }
-.btn-46:hover {
-  transform: rotateX(25deg);
+.btn-49:hover {
+  transform: rotateX(-25deg);
 }
