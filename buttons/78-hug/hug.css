@@ -42,7 +42,8 @@
   background: none;
   border-radius: 999px;
   box-sizing: border-box;
-  display: block;
+  display: grid;
+  place-items: center;
   height: var(--height);
   -webkit-mask-image: none;
   padding: 0 3rem;

@@ -40,7 +40,8 @@
   background: none;
   border-radius: 999px;
   box-sizing: border-box;
-  display: block;
+  display: grid;
+  place-items: center;
   font-size: 20px;
   font-weight: 900;
   height: 110px;
