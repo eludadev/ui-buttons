@@ -41,7 +41,8 @@
   --height: 4rem;
   border: 1px solid;
   box-sizing: border-box;
-  display: block;
+  display: grid;
+  place-items: center;
   height: var(--height);
   overflow: hidden;
   padding: 0 3rem;
