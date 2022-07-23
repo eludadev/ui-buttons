@@ -4,7 +4,7 @@
 
 If you want me to keep making **amazing free resources** for you, I would *really appreaciate* your feedback and support on my **Product Hunt** launch! 🤗️
 
-<p align="center"><iframe style="border: none;" src="https://cards.producthunt.com/cards/posts/353402?v=1" width="500" height="405" frameborder="0" scrolling="no" allowfullscreen></iframe></p>
+<p align="center"><a href="https://www.producthunt.com/widgets/cards/r/UG9zdDozNTM0MDI=" target="_blank"><img src="assets/product-hunt.png" alt="100 CSS Buttons" /></a></p>
 
 ## 🤖️ To See Code, Click on One of The Links
 
